@@ -9,6 +9,7 @@ const express = require('express');
 const app = express();
 const expressLayouts = require('express-ejs-layouts');
 const bodyParser=require('body-parser');
+const methodOverride = require('method-override')
 
 const indexRouter=require('./routes/index')
 const authorRouter=require('./routes/authors')
@@ -19,6 +20,7 @@ app.set('view engine', 'ejs');// seeting up the middleware for template engine
 app.set('views', __dirname + '/views'); // setting up path for views folder
 app.set('layout','layouts/layout');// it is for similar code snippets in every file like header and footer
 app.use(expressLayouts);// for using express layouts
+app.use(methodOverride('_method'))
 app.use(express.static('public')); // this folder has all the style sheets and js files
 app.use(bodyParser.urlencoded({limit:'10mb', extended:false}));
 
