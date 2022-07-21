@@ -11,7 +11,8 @@ const expressLayouts = require('express-ejs-layouts');
 const bodyParser=require('body-parser');
 
 const indexRouter=require('./routes/index')
-const authRouter=require('./routes/authors')
+const authorRouter=require('./routes/authors')
+const bookRouter=require('./routes/books')
 
 
 app.set('view engine', 'ejs');// seeting up the middleware for template engine
@@ -30,6 +31,7 @@ db.on('error', error=>console.error(error))
 db.once('open', ()=> console.log('Connected to database'));
 
 app.use('/', indexRouter);
-app.use('/authors',authRouter);
+app.use('/authors',authorRouter);
+app.use('/books', bookRouter);
 
 app.listen(process.env.PORT || 5000);
