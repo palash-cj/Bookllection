@@ -1,0 +1,8 @@
+.auhtor-row {
+    display: flex;
+    justify-content: space space-between;
+    margin-bottom: 1rem;
+}
+.auhtor-name {
+    font-size :1.5rem
+}

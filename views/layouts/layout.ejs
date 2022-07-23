@@ -11,15 +11,23 @@
 
     <script defer src="https://unpkg.com/filepond@^4/dist/filepond.js"></script>
     <script defer src="https://unpkg.com/filepond-plugin-file-encode/dist/filepond-plugin-file-encode.js"></script>
-    <script defer src='../../public/javascripts/fileUpload.js'></script>
+    <script defer src='/javascripts/fileUpload.js'></script>
+    <link id="main-css" rel="stylesheet" href="/stylesheets/main.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
     <title>Mybrary</title>
 </head>
 <body>
-   
+<div class="container">
     <%- include('../partials/header.ejs') %>
-    <%- include('../partials/errorMessage.ejs')%>
+    <div class="inner-container">
+        <%- include('../partials/errorMessage.ejs')%>
     
-    <%- body %>
+        <%- body %>
+    </div>
+</div> 
     <!-- this tag is used to directly add the necessary data to html page -->
     <br>
     
