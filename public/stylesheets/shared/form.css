@@ -36,7 +36,7 @@
 
 .form-item > label {
     font-size: var(--form-label-font-size);
-    margin-bottom: 25rem;
+    margin-bottom: .25rem;
     margin-left: .25rem;
 }
 
