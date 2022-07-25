@@ -140,7 +140,7 @@ async function renderFormPage(res, book, form, hasError = false) {
       if (form === 'edit') {
         params.errorMessage = 'Error Updating Book'
       } else {
-        params.errorMessage = 'Error Creating Book'
+        params.errorMessage = 'Please select a valid Image type(.png, .jpeg, .jpg)'
       }
     }
     res.render(`books/${form}`, params)
