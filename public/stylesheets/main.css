@@ -8,7 +8,7 @@
 
 :root {
     font-family : serif;
-    font-size : 30px;
+    font-size : 25px;
     /* color: var(--color-text-light); */
     color: aliceblue;
     font-weight: lighter;
@@ -28,7 +28,7 @@ background: linear-gradient(to left, #cc5333, #23074d); /* W3C, IE 10+/ Edge, Fi
 }
 
 .container {
-    max-width:1600px;
+    max-width:1500px;
     margin:auto;
     margin-bottom: 3rem;
 
