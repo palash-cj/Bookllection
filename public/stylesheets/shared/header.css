@@ -11,6 +11,8 @@
     text-decoration:none;
     font-size: var(--nav-title-font-size);
     font-weight: var(--nav-title-font-weight);
+    font-size: 100px;
+    
 }
 
 .header-nav {
@@ -38,7 +40,7 @@
     color: var(--color-text-light);
     font-weight: var(--nav-link-font-weight);
     padding: 1rem;
-    font-weight: bold;
+    font-weight: lighter;
 }
 
 .header-nav li a:hover, .header-title:hover {

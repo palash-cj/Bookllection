@@ -18,7 +18,7 @@
 .form-item {
     display: flex;
     flex-direction: column;
-    margin-left: 2rem;
+    
     flex-grow: 1;
     flex-basis: 0;
 }
@@ -47,7 +47,7 @@
     border : 1px solid var(--form-input-border-color);
     background-color: var(--form-input-background-color);
     color: black;
-    font-size: 1rem;
+    font-size: .8rem;
     font-weight:600;
     font-family: 'Roboto', sans-serif;
     outline: none;
